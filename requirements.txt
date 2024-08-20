@@ -3,3 +3,8 @@ uvicorn
 scikit-learn
 xgboost
 matplotlib
+numpy
+pandas
+joblib
+requests
+pillow

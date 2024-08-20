@@ -5,7 +5,7 @@ FROM python:3.9-slim
 WORKDIR /app
 
 # Copy all files to the container
-COPY . /app/
+COPY . .
 
 # Install the dependencies
 RUN pip install --no-cache-dir -r requirements.txt
