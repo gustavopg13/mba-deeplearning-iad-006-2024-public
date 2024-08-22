@@ -44,6 +44,10 @@ async def predict(request: ImageRequest):
         return PredictionResponse(prediction=int(prediction[0]))
     except Exception as e:
         raise HTTPException(status_code=400, detail=f"Erro ao realizar a previsão: {str(e)}")
+    
+@app.get("/healthcheck")
+async def healthcheck():
+    return {"status":"ok"}
 
 if __name__ == "__main__":
     import uvicorn
